@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slik Suede — Premium Fashion Clothing</title>
+  <meta name="description" content="Slik Suede — Where texture meets tailoring. Shop premium clothing with refined, modern designs.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Slik <span>Suede</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" aria-label="Open cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+          </svg>
+          <span class="cart-count" style="display:none">0</span>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero.jpg" alt="Slik Suede men's fashion collection">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Autumn Collection 2026</span>
+      <h1>Where <span>Texture</span> Meets Tailoring</h1>
+      <p>Premium men's clothing inspired by the richness of suede — refined silhouettes, luxurious fabrics, and timeless elegance for the modern gentleman.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="shop.html" class="btn btn-primary">Shop Collection</a>
+        <a href="about.html" class="btn btn-outline">Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Curated For You</span>
+        <h2>Featured Pieces</h2>
+        <p>Handpicked favorites from our latest collection — rich textures, refined craftsmanship.</p>
+      </div>
+      <div class="product-grid" id="featured-products">
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">New</span>
+            <img src="assets/product-01.jpg" alt="Obsidian Suede Blazer" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Obsidian Suede Blazer</h3>
+            <p class="category">Outerwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,899</span>
+              <button class="add-to-cart" onclick="addToCart(1)" aria-label="Add Obsidian Suede Blazer to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">New</span>
+            <img src="assets/product-02.jpg" alt="Champagne Oxford Shirt" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Champagne Oxford Shirt</h3>
+            <p class="category">Shirts</p>
+            <div class="product-footer">
+              <span class="product-price">₹1,699</span>
+              <button class="add-to-cart" onclick="addToCart(2)" aria-label="Add Champagne Oxford Shirt to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">Bestseller</span>
+            <img src="assets/product-03.jpg" alt="Mocha Cashmere Sweater" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Mocha Cashmere Sweater</h3>
+            <p class="category">Knitwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,599</span>
+              <button class="add-to-cart" onclick="addToCart(3)" aria-label="Add Mocha Cashmere Sweater to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-04.jpg" alt="Onyx Tailored Trousers" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Onyx Tailored Trousers</h3>
+            <p class="category">Bottoms</p>
+            <div class="product-footer">
+              <span class="product-price">₹1,899</span>
+              <button class="add-to-cart" onclick="addToCart(4)" aria-label="Add Onyx Tailored Trousers to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">Premium</span>
+            <img src="assets/product-05.jpg" alt="Ivory Linen Shirt" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Ivory Linen Shirt</h3>
+            <p class="category">Shirts</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,499</span>
+              <button class="add-to-cart" onclick="addToCart(5)" aria-label="Add Ivory Linen Shirt to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-06.jpg" alt="Camel Suede Chinos" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Camel Suede Chinos</h3>
+            <p class="category">Bottoms</p>
+            <div class="product-footer">
+              <span class="product-price">₹1,999</span>
+              <button class="add-to-cart" onclick="addToCart(6)" aria-label="Add Camel Suede Chinos to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-07.jpg" alt="Espresso Merino Turtleneck" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Espresso Merino Turtleneck</h3>
+            <p class="category">Knitwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,299</span>
+              <button class="add-to-cart" onclick="addToCart(7)" aria-label="Add Espresso Merino Turtleneck to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-08.jpg" alt="Pearl Wool Scarf" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Pearl Wool Scarf</h3>
+            <p class="category">Accessories</p>
+            <div class="product-footer">
+              <span class="product-price">₹1,599</span>
+              <button class="add-to-cart" onclick="addToCart(8)" aria-label="Add Pearl Wool Scarf to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">Premium</span>
+            <img src="assets/product-09.jpg" alt="Gold Wool Overcoat" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Gold Wool Overcoat</h3>
+            <p class="category">Outerwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,799</span>
+              <button class="add-to-cart" onclick="addToCart(9)" aria-label="Add Gold Wool Overcoat to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-10.jpg" alt="Charcoal Cropped Jacket" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Charcoal Cropped Jacket</h3>
+            <p class="category">Outerwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,499</span>
+              <button class="add-to-cart" onclick="addToCart(10)" aria-label="Add Charcoal Cropped Jacket to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">Bestseller</span>
+            <img src="assets/product-11.jpg" alt="Sand Slim-Fit Jeans" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Sand Slim-Fit Jeans</h3>
+            <p class="category">Bottoms</p>
+            <div class="product-footer">
+              <span class="product-price">₹1,799</span>
+              <button class="add-to-cart" onclick="addToCart(11)" aria-label="Add Sand Slim-Fit Jeans to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="assets/product-12.jpg" alt="Velvet Evening Blazer" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Velvet Evening Blazer</h3>
+            <p class="category">Outerwear</p>
+            <div class="product-footer">
+              <span class="product-price">₹2,199</span>
+              <button class="add-to-cart" onclick="addToCart(12)" aria-label="Add Velvet Evening Blazer to cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;">
+        <a href="shop.html" class="btn btn-secondary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-strip">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+          <h4>Free Shipping</h4>
+          <p>On orders above ₹5,000</p>
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          <h4>Secure Payments</h4>
+          <p>Razorpay & Cashfree</p>
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+          <h4>Easy Returns</h4>
+          <p>7-day hassle-free returns</p>
+        </div>
+        <div class="feature-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+          <h4>Premium Quality</h4>
+          <p>Ethically sourced fabrics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--white);">
+    <div class="container about-preview">
+      <div class="about-preview-text">
+        <span class="section-label">Our Philosophy</span>
+        <h2>Luxury is in the details</h2>
+        <p>At Slik Suede, we believe fashion should feel as rich as it looks. Every piece in our collection is designed to bring tactile elegance to your wardrobe — without compromising on quality or comfort.</p>
+        <a href="about.html" class="btn btn-primary btn-sm">Learn More</a>
+        <div class="color-blocks">
+          <div class="color-block"></div>
+          <div class="color-block"></div>
+          <div class="color-block"></div>
+          <div class="color-block"></div>
+          <div class="color-block"></div>
+        </div>
+      </div>
+      <div class="about-preview-visual">
+        <img src="assets/product-09.jpg" alt="Slik Suede men's collection preview">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="index.html" class="logo">Slik <span>Suede</span></a>
+          <p>Premium suede-inspired fashion for the discerning wardrobe. Crafted with precision in India.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html">New Arrivals</a></li>
+            <li><a href="shop.html">Bestsellers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="shipping.html">Shipping Info</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+            <li><a href="shipping.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Slik Suede. All rights reserved.</span>
+        <span>Owner: Ajruddin &nbsp;|&nbsp; GSTIN: 06EMHPA2177K1Z0 &nbsp;|&nbsp; Pin Code: 121106</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay"></div>
+  <aside class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" aria-label="Close cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="cart-total-amount">₹0</span>
+      </div>
+      <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+  <script src="js/products-extra.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
